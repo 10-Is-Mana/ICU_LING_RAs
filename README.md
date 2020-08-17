@@ -4,11 +4,11 @@ a useful python script for converting 6 plots into one page pdf.
 ## Requirements for the input files
 Respecting the format is very important because the computer is sensitive for the details.
 
-- the two folders
+- two folders
   - a folder containing plots (two speakers' three repetitions)
   - an empty folder for the generated pdfs.
   
-- the plots should have their names in the format as follows
+- plots should have their names in the format as follows
   
   **SpeakerID_stimuli number-stimuli ID_repetition.pdf**
   
@@ -33,7 +33,7 @@ How do you know your computer has python3 ? - Open Terminal, and type `Python3`.
   
 
 - download a script
-  - download a script to the appropriate place 
+  - save a script to the appropriate place 
   
 - run the program
   - open Terminal
@@ -44,5 +44,7 @@ How do you know your computer has python3 ? - Open Terminal, and type `Python3`.
     
   - type `python3 convertPDF.py [the path to the folder where plots are] [the path to the destination folder]`
   
+  
+  **contact : 10suism.ashida@gmail.com for any inquiries, or post me "pull requests"**
   
  

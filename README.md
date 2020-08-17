@@ -37,7 +37,7 @@ How do you know your computer has python3 ? - Open Terminal, and type `Python3`.
   
 - run the program
   - open Terminal
-  - go to the place where the script is downloaded by using Linux command `cd`, example `cd download/plots`
+  - go to the place where the script is saved via Linux command `cd`, example `cd download/plots`
     - useful Linux commands
     - `ls` - listing the all the file names
     - `pwd` - showing the path of where you are

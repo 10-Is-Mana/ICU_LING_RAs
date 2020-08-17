@@ -4,7 +4,10 @@ a useful python script for converting 6 plots into one page pdf.
 ## Requirements for the input files
 Respecting the format is very important because the computer is sensitive for the details.
 
-- the two folders : one containing plots (two speakers' three repetitions), and one empty folder for the generated pdfs.
+- the two folders
+  - a folder containing plots (two speakers' three repetitions)
+  - an empty folder for the generated pdfs.
+  
 - the plots should have their names in the format as follows
   
   **SpeakerID_stimuli number-stimuli ID_repetition.pdf**

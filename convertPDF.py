@@ -1,3 +1,4 @@
+# packages
 import io
 import glob
 import os
@@ -11,7 +12,7 @@ from reportlab.pdfbase.cidfonts import UnicodeCIDFont
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
 
-# function for put the file names
+# function for putting the file names
 def putFileNames(page, col, row, j, pathlist):
     packet = io.BytesIO()
     can = canvas.Canvas(packet, pagesize=letter)
@@ -30,6 +31,7 @@ def putFileNames(page, col, row, j, pathlist):
     new_pdf = PdfFileReader(packet)
     page.mergePage(new_pdf.getPage(0))
 
+# function for converting 6 plots to one pdf
 def pdfconvert(pathlist, stimuli):
     output = PdfFileWriter()
 
@@ -80,14 +82,14 @@ prefix = list(set([line.split("_")[0] for line in path_pdfs]))
 # stimulis
 f_in_set = set([line.split("_")[1] for line in path_pdfs])
 
+
 for elem in tqdm(f_in_set):
     paths = []
     for i in range(1, 4):
         if f'{prefix[0]}_{elem}_{i}{".pdf"}' in path_pdfs and f'{prefix[1]}_{elem}_{i}{".pdf"}' in path_pdfs:
             paths.append(f'{prefix[0]}_{elem}_{i}{".pdf"}')
             paths.append(f'{prefix[0]}_{elem}_{i}{".pdf"}')
-        else:
-            print("it seems either of the files is missing")
-            print(f'{prefix[0]}_{elem}_{i}{".pdf"}')
-            print(f'{prefix[1]}_{elem}_{i}{".pdf"}')
-    pdfconvert(paths, elem)
+    if len(paths) == 6:
+      pdfconvert(paths, elem)
+    else:
+      print(f'{elem} is not generated because there are less than 6 plots.')

@@ -20,7 +20,8 @@ Respecting the format is very important because the computer is sensitive for th
   
   [Speaker2 repetition1] [Speaker2 repetition2] [Speaker2 repetition3]
   
-
+**the program can be adapted to the different size, and/or number of plots, I commented which part is doing what in the program as much as I can but if it's not clear enough, don't hesitate to contact me! Always Happy to talked to Kouhais :) **
+  
 
 ## How to use the script
 
@@ -34,7 +35,6 @@ How do you know your computer has python3 ? - Open Terminal, and type `Python3`.
   - `PyPDF2`(I tested with 1.26.0) is a package for merging pdfs. 
   - `reportlab`(I tested with 3.5.47) is a package for creating a textbox which can be placed on a document. 
   
-
 - download a script
   - save a script to the appropriate place. The extention should be `.py`.  
   
@@ -46,9 +46,15 @@ How do you know your computer has python3 ? - Open Terminal, and type `Python3`.
     - `pwd` - showing the path of where you are
     
   - type `python3 convertPDF.py [the path to the folder where plots are] [the path to the destination folder]`
+
+**Test the program with the small number of pdfs first to see if it works correctly**
+Sample checklists
+- [ ] Is the merged file generated in the folder you want? if no, the path might be incorrect. 
+- [ ] The name of the plot and the plot match? (the name of the pdf might cause this problem, it should be fixed by change the index of `pathlist`)
+- [ ] The layout is what you want? if no, change the layout as you prefer. 
   
 ## The program doesn't work?
-- Read error messages carefully. 
+- Read error messages, if you don't understand what it means, google it. 
 - Read documentations of packages.
 - Google other usecases of packages.
 
@@ -60,6 +66,6 @@ How do you know your computer has python3 ? - Open Terminal, and type `Python3`.
 ## Alternatives
 - [PDFtk](https://www.pdflabs.com/tools/pdftk-server/) seems to me an alternative for merging pdf files, though I did not try.
   
-**contact : 10suism.ashida@gmail.com for any inquiries, or post me "pull requests"**
+**contact : 10suism.ashida@gmail.com for any inquiries, or post me "issue" on github repository**
   
  

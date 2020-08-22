@@ -20,7 +20,7 @@ Respecting the format is very important because the computer is sensitive for th
   
   [Speaker2 repetition1] [Speaker2 repetition2] [Speaker2 repetition3]
   
-**the program can be adapted to the different size, and/or number of plots, I commented which part is doing what in the program as much as I can but if it's not clear enough, don't hesitate to contact me! Always Happy to talked to Kouhais :) **
+**the program can be adapted to the different size, and/or number of plots, I commented which part is doing what in the program as much as I can but if it's not clear enough, don't hesitate to contact me! Always Happy to talk to Kouhais :)**
   
 
 ## How to use the script

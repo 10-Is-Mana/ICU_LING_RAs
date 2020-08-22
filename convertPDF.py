@@ -25,16 +25,13 @@ def putFileNames(page, col, row, j, pathlist):
     packet = io.BytesIO()
     can = canvas.Canvas(packet, pagesize=letter)
     
-    # you can change font_size here
-    font_size = 20
+    # you can change font_size and font, by codes such as below.
+    # font_size = 10
+    # can.setFont("Times-Roman", font_size)
     can.setFillColor(Color(0, 0, 0, alpha=1))
     
     # specifying (width, height, string). without float() it doesn't work (maybe because I used the ratio?).
-    can.drawString(
-        col,
-        float(row),
-        pathlist[j]
-    )
+    can.drawString(col, float(row), pathlist[j])
 
     can.save()
 
@@ -101,6 +98,7 @@ def pdfconvert(pathlist, stimuli):
 # path for folder
 path = sys.argv[1]
 os.chdir(path)
+# this obtains all the pdf file names
 path_pdfs = glob.glob('*.pdf')
 
 # such as "SIP110"

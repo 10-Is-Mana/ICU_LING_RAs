@@ -27,9 +27,9 @@ Respecting the format is very important because the computer is sensitive for th
 
 - Python 3 (I tested with 3.8)
 
-How do you know your computer has python3 ? - Open Terminal, and type `Python3`. If you see `>>>`, your computer has Python3. To get out from Python mode, you type `exit()` or command D.
+How do you know your computer has python3 ? - Open Terminal, and type `Python3`. If you see `>>>`, your computer has Python3. To get out from Python mode, you type `exit()` or control D.
 
-- Install packages 
+- install packages 
   - type `pip install tqdm, PyPDF2, reportlab` (if `pip` doesn't work, try using `pip3` instead)
   - `tqdm`(I tested with 4.48.2) is a package for showing a progress bar while a program is running. This program takes some time, so the visualization of the process is reassuring ;)
   - `PyPDF2`(I tested with 1.26.0) is a package for merging pdfs. 
@@ -48,14 +48,14 @@ How do you know your computer has python3 ? - Open Terminal, and type `Python3`.
   - type `python3 convertPDF.py [the path to the folder where plots are] [the path to the destination folder]`
 
 **Test the program with the small number of pdfs first to see if it works correctly**
-Sample checklists
+sample checklists
 - [ ] Is the merged file generated in the folder you want? if no, the path might be incorrect. 
 - [ ] The name of the plot and the plot match? (the name of the pdf might cause this problem, it should be fixed by change the index of `pathlist`)
 - [ ] The layout is what you want? if no, change the layout as you prefer. 
   
 ## The program doesn't work?
-- Read error messages, if you don't understand what it means, google it. 
-- Read documentations of packages.
+- read error messages, if you don't understand what it means, google it. 
+- read documentations of packages.
 - Google other usecases of packages.
 
 ## References

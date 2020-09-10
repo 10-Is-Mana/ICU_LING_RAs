@@ -4,7 +4,7 @@
 This program creates one page pdf with multiple plots.
 
 ## Requirements
-- tqdm, PyPDF2
+- tqdm, PyPDF2 (install via `pip(3) install tqdm, PyPDF2`)
 - the folder architecture should be as follows:
   ```
   main -- 1st row plots folder
